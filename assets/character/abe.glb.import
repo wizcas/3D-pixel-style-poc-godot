@@ -1,0 +1,86 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://b4e587nnc8gho"
+path="res://.godot/imported/abe.glb-ba2fa9a2a7c9016ccf2ca4245cbb7a02.scn"
+
+[deps]
+
+source_file="res://assets/character/abe.glb"
+dest_files=["res://.godot/imported/abe.glb-ba2fa9a2a7c9016ccf2ca4245cbb7a02.scn"]
+
+[params]
+
+nodes/root_type="CharacterBody3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+import_script/path="res://creature/Player.cs"
+_subresources={
+"animations": {
+"idle": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-backward": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-backward-left": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-backward-right": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-forward": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-forward-left": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-forward-right": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-left": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+},
+"jog-right": {
+"save_to_file/enabled": false,
+"save_to_file/keep_custom_tracks": "",
+"save_to_file/path": "",
+"settings/loop_mode": 1
+}
+}
+}

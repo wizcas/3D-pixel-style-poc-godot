@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://cn83jkr2umbs"]
+
+[ext_resource type="PackedScene" uid="uid://debew2hqdi0xe" path="res://creature/Abe.tscn" id="2_3np8k"]
+[ext_resource type="PackedScene" uid="uid://depygsj1q3wlo" path="res://assets/world/simple.glb" id="2_tdv82"]
+[ext_resource type="Script" path="res://CameraController.cs" id="3_kasps"]
+
+[sub_resource type="Environment" id="Environment_rxyg8"]
+background_mode = 1
+background_color = Color(0.192157, 0.129412, 0.160784, 1)
+tonemap_mode = 2
+ssao_enabled = true
+glow_enabled = true
+glow_bloom = 0.18
+
+[node name="Test" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_rxyg8")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.836764, 0.382427, -0.391887, 0, 0.715693, 0.698415, 0.547563, -0.584409, 0.598866, 0, 0, 0)
+light_color = Color(0.984314, 0.870588, 0.819608, 1)
+shadow_enabled = true
+
+[node name="simple" parent="." instance=ExtResource("2_tdv82")]
+
+[node name="abe" parent="." instance=ExtResource("2_3np8k")]
+
+[node name="SpringArm3d" type="SpringArm3D" parent="." node_paths=PackedStringArray("Pivot")]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1, 0)
+collision_mask = 0
+spring_length = 10.0
+script = ExtResource("3_kasps")
+Pivot = NodePath("../abe")
+
+[node name="Camera3d" type="Camera3D" parent="SpringArm3d"]
+projection = 1
+size = 8.0
