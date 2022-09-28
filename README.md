@@ -2,6 +2,7 @@
 
 ## Requirements
 
+- Git LFS installed
 - Godot 4 Mono build
 - Blender 3.3+ for editing the models and animations
 - .NET 6
